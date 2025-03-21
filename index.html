@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven | Artisan Coffee & Pastries</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="Brew Haven Logo">
+                        <span>Brew Haven</span>
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#order" class="btn btn-primary">Order Online</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Artisan Coffee & Delightful Pastries</h1>
+                    <p>Experience the perfect blend of flavor and comfort at Brew Haven, where every cup tells a story.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                        <a href="#location" class="btn btn-secondary">Find Us</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80" alt="Artisan Coffee Cup">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Customer Favorites</h2>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Cappuccino">
+                        </div>
+                        <h3>Signature Cappuccino</h3>
+                        <p>Rich espresso with silky steamed milk and velvety foam</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Butter Croissant">
+                        </div>
+                        <h3>Butter Croissant</h3>
+                        <p>Flaky, buttery layers baked to golden perfection</p>
+                        <span class="price">$3.75</span>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Vanilla Latte">
+                        </div>
+                        <h3>Vanilla Latte</h3>
+                        <p>Smooth espresso with steamed milk and vanilla syrup</p>
+                        <span class="price">$5.25</span>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Glazed Donut">
+                        </div>
+                        <h3>Glazed Donut</h3>
+                        <p>Soft, fluffy donut with a sweet glaze</p>
+                        <span class="price">$2.95</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-target="coffee">Coffee</button>
+                    <button class="menu-tab" data-target="pastries">Pastries</button>
+                    <button class="menu-tab" data-target="donuts">Donuts</button>
+                    <button class="menu-tab" data-target="specials">Specials</button>
+                </div>
+                
+                <div class="menu-content active" id="coffee">
+                    <div class="menu-category">
+                        <h3>Espresso Drinks</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Espresso</h4>
+                                    <p>Rich, full-bodied shot of espresso</p>
+                                </div>
+                                <span class="menu-item-price">$3.25</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Americano</h4>
+                                    <p>Espresso diluted with hot water</p>
+                                </div>
+                                <span class="menu-item-price">$3.75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Cappuccino</h4>
+                                    <p>Equal parts espresso, steamed milk, and foam</p>
+                                </div>
+                                <span class="menu-item-price">$4.50</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Latte</h4>
+                                    <p>Espresso with steamed milk and a light layer of foam</p>
+                                </div>
+                                <span class="menu-item-price">$4.75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Mocha</h4>
+                                    <p>Espresso with chocolate, steamed milk, and whipped cream</p>
+                                </div>
+                                <span class="menu-item-price">$5.25</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category">
+                        <h3>Specialty Lattes</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Vanilla Latte</h4>
+                                    <p>Espresso with steamed milk and vanilla syrup</p>
+                                </div>
+                                <span class="menu-item-price">$5.25</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Caramel Latte</h4>
+                                    <p>Espresso with steamed milk and caramel syrup</p>
+                                </div>
+                                <span class="menu-item-price">$5.25</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Hazelnut Latte</h4>
+                                    <p>Espresso with steamed milk and hazelnut syrup</p>
+                                </div>
+                                <span class="menu-item-price">$5.25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="pastries">
+                    <div class="menu-category">
+                        <h3>Croissants</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Butter Croissant</h4>
+                                    <p>Classic flaky, buttery croissant</p>
+                                </div>
+                                <span class="menu-item-price">$3.75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Almond Croissant</h4>
+                                    <p>Croissant filled with almond cream and topped with sliced almonds</p>
+                                </div>
+                                <span class="menu-item-price">$4.50</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Chocolate Croissant</h4>
+                                    <p>Croissant with chocolate filling</p>
+                                </div>
+                                <span class="menu-item-price">$4.25</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category">
+                        <h3>Other Pastries</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Cinnamon Roll</h4>
+                                    <p>Soft roll with cinnamon filling and cream cheese frosting</p>
+                                </div>
+                                <span class="menu-item-price">$4.50</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Blueberry Muffin</h4>
+                                    <p>Moist muffin loaded with fresh blueberries</p>
+                                </div>
+                                <span class="menu-item-price">$3.95</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Danish Pastry</h4>
+                                    <p>Flaky pastry with fruit filling</p>
+                                </div>
+                                <span class="menu-item-price">$4.25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More menu sections would go here -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2015, Brew Haven began with a simple mission: to create a warm, welcoming space where quality coffee and freshly baked goods bring people together.</p>
+                    <p>Our beans are ethically sourced from small farms around the world, and our pastries are baked fresh daily using traditional techniques and the finest ingredients.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Inside our coffee shop">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"The best cappuccino I've ever had! The atmosphere is cozy and the staff is incredibly friendly."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" alt="Customer">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Regular Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Their almond croissants are to die for! I come here every weekend for my coffee and pastry fix."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Customer">
+                                <div>
+                                    <h4>Michael Chen</h4>
+                                    <span>Coffee Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="location">
+            <div class="container">
+                <h2 class="section-title">Find Us</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="location-details">
+                            <h3>Address</h3>
+                            <p>123 Coffee Street<br>Brewville, CA 90210</p>
+                        </div>
+                        <div class="location-details">
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 6:30am - 8:00pm<br>
+                            Saturday - Sunday: 7:00am - 9:00pm</p>
+                        </div>
+                        <div class="location-details">
+                            <h3>Contact</h3>
+                            <p>Phone: (555) 123-4567<br>
+                            Email: hello@brewhaven.com</p>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203498383!2d-118.34!3d34.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzM2LjAiTiAxMTjCsDIwJzI0LjAiVw!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Join Our Newsletter</h2>
+                    <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="Brew Haven Logo">
+                    <h3>Brew Haven</h3>
+                    <p>Artisan Coffee & Pastries</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Brew Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/debug.js"></script>
+</body>
+</html> 
