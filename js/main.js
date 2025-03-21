@@ -7,7 +7,24 @@ document.addEventListener('DOMContentLoaded', function() {
         navToggle.addEventListener('click', function() {
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            
+            // Add this to prevent scrolling when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+            
             console.log('Mobile menu toggled'); // Debug log
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navToggle.contains(event.target) && !navMenu.contains(event.target) && navMenu.classList.contains('active')) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
     }
     
@@ -73,6 +90,29 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSlide = (currentSlide + 1) % testimonials.length;
             showSlide(currentSlide);
         }, 5000);
+    }
+    
+    // Add touch support for testimonial slider
+    if (testimonials.length > 0) {
+        let startX, endX;
+        const testimonialSlider = document.querySelector('.testimonial-slider');
+        
+        testimonialSlider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        }, false);
+        
+        testimonialSlider.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            
+            // Detect swipe direction
+            if (startX - endX > 50) { // Swipe left
+                currentSlide = (currentSlide + 1) % testimonials.length;
+                showSlide(currentSlide);
+            } else if (endX - startX > 50) { // Swipe right
+                currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length;
+                showSlide(currentSlide);
+            }
+        }, false);
     }
     
     // Smooth scrolling for navigation links
